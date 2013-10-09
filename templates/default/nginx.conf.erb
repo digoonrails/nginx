@@ -45,7 +45,6 @@ http {
   keepalive_timeout  <%= node['nginx']['keepalive_timeout'] %>;
   <% end %>
 
-  types_hash_max_size <%= node['nginx']['types_hash_max_size'] %>;
   gzip  <%= node['nginx']['gzip'] %>;
   <% if node['nginx']['gzip'] == 'on' %>
   gzip_http_version <%= node['nginx']['gzip_http_version'] %>;
